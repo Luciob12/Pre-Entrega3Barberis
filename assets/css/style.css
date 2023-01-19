@@ -1,0 +1,945 @@
+body {
+  font-family: fuenteProyecto;
+  background-image: url("../img/fondo4-min.jpg");
+}
+
+.navegador {
+  grid-area: nav;
+}
+.navegador .navegador {
+  background-color: black;
+  padding: 20px;
+}
+.navegador .navegador .fa-bars {
+  display: none;
+  color: white;
+}
+.navegador .navegador > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.navegador .navegador > ul > li > a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 20px;
+}
+.navegador .navegador > ul > li:hover {
+  background-color: rgba(68, 67, 67, 0.8470588235);
+  border-radius: 25px;
+}
+.navegador .logo img {
+  width: 210px;
+}
+
+.navegador {
+  grid-area: nav;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+}
+.navegador > fa-bars {
+  display: none;
+  color: white;
+}
+.navegador > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.navegador > ul > li:hover {
+  background-color: rgba(68, 67, 67, 0.8470588235);
+  border-radius: 25px;
+}
+.navegador > ul > li > a {
+  text-decoration: none;
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.logo > img {
+  width: 150px;
+  padding-left: 15px;
+}
+
+/* NAVEGADOR CELULAR */
+@media (max-width: 576px) {
+  .navegador .fa-bars {
+    display: block;
+    font-size: 30px;
+  }
+  .logo > img {
+    width: 150px;
+    padding-left: 15px;
+  }
+  .navegador > ul {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 10px;
+    padding: 10% 0% 0% 5%;
+    background-color: black;
+    width: 250px;
+    height: 100%;
+    transition: 0.2s;
+  }
+  .navegador .fa-bars:hover + ul {
+    left: 0;
+  }
+  .navegador > ul:hover {
+    left: 0;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   aside" "footer footer footer footer";
+}
+
+.gridHeader {
+  grid-area: header;
+}
+
+.gridMain {
+  grid-area: main;
+}
+
+.gridAside {
+  grid-area: aside;
+}
+
+.gridFooter {
+  grid-area: footer;
+}
+
+.gridSobreNosotros {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main" "aside  aside  aside  aside" "footer footer footer footer";
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.911);
+  position: fixed;
+  z-index: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading > i {
+  color: aliceblue;
+  font-size: 40px;
+  -webkit-animation-name: rotar;
+          animation-name: rotar;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/* INICIO */
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+/* PIE PAGINA*/
+@keyframes logo {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(200px, 0px);
+  }
+}
+/* LOADING */
+@-webkit-keyframes rotar {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(90deg);
+  }
+}
+@keyframes rotar {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(90deg);
+  }
+}
+/* PAGINA SOBRE NOSOTROS */
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.contacto {
+  height: 700px;
+  padding-left: 100px;
+}
+
+.mapaUbicacion {
+  padding: 15px 0px 20px;
+}
+
+.horarios {
+  font-size: 20px;
+  padding: 200px 0px 0px;
+}
+
+.ubicacion h2 {
+  text-align: center;
+}
+
+.wpp {
+  padding: 50px 0px 0px 0px;
+}
+.wpp img {
+  padding: 40px;
+  width: 150px;
+}
+
+.contenedor-acordeon {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contenedor-acordeon h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+.contenedor-acordeon p {
+  text-align: center;
+}
+
+.acordeon {
+  background-color: rgba(255, 255, 255, 0.267);
+}
+.acordeon label {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  background-color: #1c1c1c;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 2px;
+  transition: all 300ms ease;
+}
+.acordeon label:hover {
+  background-color: #2e2e2e;
+}
+.acordeon .contenido-acordeon {
+  padding: 0px;
+  margin: 0px 20px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.btn-acordeon {
+  display: none;
+}
+.btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: 600px;
+  padding: 15px 0px;
+}
+
+.wppAcordeon {
+  display: flex;
+  justify-content: center;
+}
+.wppAcordeon img {
+  width: 70px;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover {
+  box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.8);
+  transform: translateY(-3%);
+}
+.card img {
+  padding: 5px;
+  width: 100%;
+  height: 80%;
+}
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+
+.slider {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul {
+  display: flex;
+  width: 400%;
+  padding: 0;
+  -webkit-animation: cambio 20s infinite;
+  animation: cambio 20s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+.slider ul li {
+  width: 100%;
+  list-style: none;
+}
+.slider img {
+  width: 100%;
+}
+
+.sobreNosotros {
+  padding: 5%;
+}
+
+.tituloInicio {
+  text-align: center;
+  padding: 20px;
+}
+
+.tituloContacto {
+  text-align: center;
+  padding: 20px;
+}
+
+.tituloPreguntas {
+  text-align: center;
+  padding: 20px;
+}
+
+.tituloQuienes {
+  text-align: center;
+  padding: 20px;
+}
+
+.tituloServicios {
+  text-align: center;
+  padding: 20px;
+}
+
+.logoInstagram {
+  padding: 5px 5px 5px;
+  width: 40px;
+}
+
+.logoFacebook {
+  width: 40px;
+  padding: 5px 5px 5px;
+}
+
+.logoCorreo {
+  width: 40px;
+  padding: 5px 5px 5px;
+}
+
+.logoWhatsapp {
+  width: 40px;
+  padding: 5px 5px 5px;
+}
+
+.piePagina {
+  height: 130px;
+  background-color: rgba(68, 67, 67, 0.8470588235);
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+}
+
+.redes {
+  align-items: center;
+  padding: 20px 20px 30px;
+}
+
+.letraPiePagina {
+  font-size: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 0px 4px 0px;
+  color: #000;
+}
+
+.logoFooter img {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  -webkit-animation-name: logo;
+          animation-name: logo;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.logoInstagram {
+  padding: 5px 5px 5px;
+  width: 40px;
+}
+
+.logoFacebook {
+  width: 40px;
+  padding: 5px 5px 5px;
+}
+
+.logoCorreo {
+  width: 40px;
+  padding: 5px 5px 5px;
+}
+
+.logoWhatsapp {
+  width: 40px;
+  padding: 5px 5px 5px;
+}
+
+.gridFooter {
+  grid-area: footer;
+}
+
+.logoInstagram {
+  padding: 5px 5px 5px;
+  width: 40px;
+}
+
+.logoFacebook {
+  width: 40px;
+  padding: 5px 5px 5px;
+}
+
+.logoCorreo {
+  width: 40px;
+  padding: 5px 5px 5px;
+}
+
+.logoWhatsapp {
+  width: 40px;
+  padding: 5px 5px 5px;
+}
+
+.piePagina {
+  height: 130px;
+  background-color: rgba(68, 67, 67, 0.8470588235);
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100%;
+}
+
+.redes {
+  align-items: center;
+  padding: 20px 20px 30px;
+}
+
+.letraPiePagina {
+  font-size: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 0px 4px 0px;
+  color: #000;
+}
+
+.logoFooter img {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  -webkit-animation-name: logo;
+  animation-name: logo;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(200px, 0px);
+  }
+}
+@keyframes logo {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(200px, 0px);
+  }
+}
+/* PIE PAGINA CELULAR */
+@media (max-width: 576px) {
+  .letraPiePagina h5 {
+    font-size: x-small;
+  }
+  .letraPiePagina {
+    width: 300px;
+  }
+  .logoFooter img {
+    -webkit-animation: none;
+    animation: none;
+    width: 90px;
+    height: 90px;
+  }
+  .redes {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 872px) {
+  .logoFooter img {
+    -webkit-animation: none;
+    animation: none;
+    display: flex;
+    align-items: center;
+  }
+}
+.gridHeader > h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inicio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.queHacemos {
+  margin: 15px;
+  width: 500px;
+  padding: 30px 10px 10px 10px;
+}
+.queHacemos > h2 {
+  text-align: center;
+}
+
+.letraQueHacemos1 {
+  padding: 20px 0px 0px 50px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.letraQueHacemos2 {
+  padding: 0px 0px 45px 50px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.trabajosRealizados {
+  padding: 0px 0px 60px 0px;
+}
+.trabajosRealizados > img {
+  width: 380px;
+  height: 400px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sliderInicio {
+  width: 300px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+}
+.sliderInicio ul {
+  display: flex;
+  width: 400%;
+  padding: 0;
+  -webkit-animation: cambio 20s infinite;
+          animation: cambio 20s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.sliderInicio ul li {
+  width: 100%;
+  list-style: none;
+}
+.sliderInicio img {
+  width: 100%;
+}
+
+.inicio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.queHacemos {
+  margin: 15px;
+  width: 500px;
+  padding: 30px 10px 10px 10px;
+}
+
+.queHacemos > h2 {
+  text-align: center;
+}
+
+.letraQueHacemos1 {
+  padding: 20px 0px 0px 50px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.letraQueHacemos2 {
+  padding: 0px 0px 45px 50px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.trabajosRealizados > img {
+  width: 380px;
+  height: 400px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sliderInicio {
+  width: 300px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+}
+
+.sliderInicio ul {
+  display: flex;
+  width: 400%;
+  padding: 0;
+  -webkit-animation: cambio 20s infinite;
+  animation: cambio 20s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.sliderInicio ul li {
+  width: 100%;
+  list-style: none;
+}
+
+.sliderInicio img {
+  width: 100%;
+}
+
+.trabajosRealizados {
+  padding: 0px 0px 60px 0px;
+}
+
+@-webkit-keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+/* INICIO CELULAR */
+@media (max-width: 576px) {
+  .inicio {
+    display: flex;
+    justify-content: center;
+  }
+  .trabajosRealizados {
+    display: flex;
+    justify-content: center;
+  }
+  .letraQueHacemos1 {
+    padding: 10px 5px 0px 5px;
+  }
+  .letraQueHacemos2 {
+    padding: 0px 5px 0px 5px;
+  }
+}
+/* INICIO MONITOR ESCRITORIO */
+@media (min-width: 1800px) {
+  .inicio {
+    display: flex;
+    justify-content: center;
+  }
+  .trabajosRealizados {
+    padding-top: 60px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .queHacemos {
+    width: 600px;
+    padding: 80px 10px 10px 10px;
+  }
+  .queHacemos h2 {
+    font-size: 30px;
+    padding: 10px 5px 0px 5px;
+  }
+  .queHacemos p {
+    font-size: 25px;
+    padding: 10px 5px 0px 5px;
+  }
+  .sliderInicio {
+    width: 500px;
+  }
+}
+@font-face {
+  font-family: fuenteProyecto;
+  src: url(/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+@media (max-width: 576px) {
+  .grid {
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main  " "aside  aside  aside  aside " "footer footer footer footer";
+  }
+  .navegador .fa-bars {
+    display: block;
+    font-size: 30px;
+  }
+  .navegador .fa-bars:hover + ul {
+    left: 0;
+  }
+  .navegador > ul {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 10px;
+    padding: 10% 0% 0% 5%;
+    background-color: black;
+    width: 250px;
+    height: 100%;
+    transition: 0.2s;
+  }
+  .navegador ul:hover {
+    left: 0;
+  }
+  .logo > img {
+    width: 150px;
+    padding-left: 15px;
+  }
+  .inicio {
+    display: flex;
+    justify-content: center;
+  }
+  .trabajosRealizados {
+    display: flex;
+    justify-content: center;
+  }
+  .letraQueHacemos1 {
+    padding: 10px 5px 0px 5px;
+  }
+  .letraQueHacemos2 {
+    padding: 0px 5px 0px 5px;
+  }
+  .letraPiePagina {
+    width: 300px;
+  }
+  .letraPiePagina h5 {
+    font-size: x-small;
+  }
+  .logoFooter img {
+    -webkit-animation: none;
+            animation: none;
+    width: 90px;
+    height: 90px;
+  }
+  .redes {
+    display: flex;
+    align-items: flex-start;
+  }
+  .mapaUbicacion {
+    display: flex;
+    justify-content: center;
+  }
+  .wpp {
+    display: flex;
+    flex-direction: column;
+    padding-left: 130px;
+  }
+  .wpp img {
+    padding: 40px;
+    width: 140px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1800px) {
+  .inicio {
+    display: flex;
+    justify-content: center;
+  }
+  .trabajosRealizados {
+    padding-top: 60px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .queHacemos {
+    width: 600px;
+    padding: 80px 10px 10px 10px;
+  }
+  .queHacemos h2 {
+    font-size: 30px;
+    padding: 10px 5px 0px 5px;
+  }
+  .queHacemos p {
+    font-size: 25px;
+    padding: 10px 5px 0px 5px;
+  }
+  .sliderInicio {
+    width: 500px;
+  }
+  .contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  .preguntasFrecuentes {
+    font-size: 20px;
+  }
+}
+@media (max-width: 872px) {
+  .logoFooter img {
+    -webkit-animation: none;
+            animation: none;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .contenedor-acordeon {
+    width: 90%;
+  }
+  .acordeon label {
+    padding: 20px;
+    font-size: 15px;
+  }
+}

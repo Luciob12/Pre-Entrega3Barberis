@@ -1,0 +1,24 @@
+{
+  "name": "borgogno-impresos",
+  "version": "1.0.0",
+  "description": "migrando proyecto a SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --incluide-path scss src/scss/style.scss assets/css/style.css ",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luciob12/BORGOGNO-IMPRESOS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luciob12/BORGOGNO-IMPRESOS/issues"
+  },
+  "homepage": "https://github.com/Luciob12/BORGOGNO-IMPRESOS#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

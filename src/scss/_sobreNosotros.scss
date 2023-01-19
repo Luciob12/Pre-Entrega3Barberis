@@ -1,0 +1,26 @@
+.slider {
+	width: 80%;
+	height: 500px;
+	margin: auto;
+	overflow: hidden;
+	ul {
+		display: flex;
+		width: 400%;
+		padding: 0;
+		-webkit-animation: cambio 20s infinite;
+		animation: cambio 20s infinite;
+		-webkit-animation-direction: alternate;
+		animation-direction: alternate;
+		li {
+			width: 100%;
+			list-style: none;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+.sobreNosotros {
+	padding: 5%;
+}
+

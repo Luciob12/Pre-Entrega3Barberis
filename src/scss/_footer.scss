@@ -1,0 +1,177 @@
+
+.logoInstagram {
+	padding: 5px 5px 5px;
+	width: 40px;
+}
+.logoFacebook {
+	width: 40px;
+	padding: 5px 5px 5px;
+}
+.logoCorreo {
+	width: 40px;
+	padding: 5px 5px 5px;
+}
+.logoWhatsapp {
+	width: 40px;
+	padding: 5px 5px 5px;
+}
+
+.piePagina {
+	height: 130px;
+	background-color: $background-color_2;
+	display: flex;
+	color: $color_1;
+	justify-content: space-between;
+	bottom: 0;
+	width: 100%;
+}
+.redes {
+	align-items: center;
+	padding: 20px 20px 30px;
+}
+.letraPiePagina {
+	font-size: 20px;
+	display: flex;
+	align-items: flex-end;
+	padding: 0px 0px 4px 0px;
+	color: $color_3;
+}
+.logoFooter {
+	img {
+		width: 130px;
+		height: 130px;
+		display: flex;
+		justify-content: center;
+		animation-name: logo;
+		animation-duration: 3s;
+		animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		animation-iteration-count: infinite;
+	}
+
+}
+
+
+.logoInstagram {
+	padding: 5px 5px 5px;
+	width: 40px;
+}
+.logoFacebook {
+	width: 40px;
+	padding: 5px 5px 5px;
+}
+.logoCorreo {
+	width: 40px;
+	padding: 5px 5px 5px;
+}
+.logoWhatsapp {
+	width: 40px;
+	padding: 5px 5px 5px;
+}
+
+.gridFooter {
+    grid-area: footer;
+  }
+  
+  .logoInstagram {
+    padding: 5px 5px 5px;
+    width: 40px;
+  }
+  
+  .logoFacebook {
+    width: 40px;
+    padding: 5px 5px 5px;
+  }
+  
+  .logoCorreo {
+    width: 40px;
+    padding: 5px 5px 5px;
+  }
+  
+  .logoWhatsapp {
+    width: 40px;
+    padding: 5px 5px 5px;
+  }
+  
+  .piePagina {
+    height: 130px;
+    background-color: rgba(68, 67, 67, 0.8470588235);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .redes {
+    align-items: center;
+    padding: 20px 20px 30px;
+  }
+  
+  .letraPiePagina {
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 0px 4px 0px;
+    color: #000;
+  }
+  
+  .logoFooter img {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    -webkit-animation-name: logo;
+            animation-name: logo;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes logo {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(200px, 0px);
+    }
+  }
+  
+  @keyframes logo {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(200px, 0px);
+    }
+  }
+  /* PIE PAGINA CELULAR */
+  @media (max-width: 576px) {
+    .letraPiePagina h5 {
+      font-size: x-small;
+    }
+    .letraPiePagina {
+      width: 300px;
+    }
+    .logoFooter img {
+      -webkit-animation: none;
+              animation: none;
+      width: 90px;
+      height: 90px;
+    }
+    .redes {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 872px) {
+    .logoFooter img {
+      -webkit-animation: none;
+              animation: none;
+      display: flex;
+      align-items: center;
+    }
+  }
+  

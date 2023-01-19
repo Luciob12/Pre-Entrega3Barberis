@@ -1,0 +1,166 @@
+@import "variables";
+@import "navegador";
+@import "grid";
+@import "animaciones";
+@import "contacto";
+@import "pregFrecuentes";
+@import "servicios";
+@import "sobreNosotros";
+@import "titulos";
+@import "footer";
+@import "header";
+@import "reset";
+@import "inicio";
+
+@font-face {
+	font-family: fuenteProyecto;
+	src: url(/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@media (max-width:576px) {
+	.grid {
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   main  ""aside  aside  aside  aside ""footer footer footer footer";
+	}
+	.navegador {
+		.fa-bars {
+			display: block;
+			font-size: 30px;
+			&:hover {
+				+ {
+					ul {
+						left: 0;
+					}
+				}
+			}
+		}
+		>ul {
+			position: fixed;
+			top: 0;
+			left: -300px;
+			flex-direction: column;
+			justify-content: start;
+			padding-left: 10px;
+			padding: 10% 0% 0% 5%;
+			background-color: $background-color_1;
+			width: 250px;
+			height: 100%;
+			transition: 0.2s;
+		}
+		ul {
+			&:hover {
+				left: 0;
+			}
+		}
+	}
+	.logo {
+		>img {
+			width: 150px;
+			padding-left: 15px;
+		}
+	}
+	.inicio {
+		display: flex;
+		justify-content: center;
+	}
+	.trabajosRealizados {
+		display: flex;
+		justify-content: center;
+	}
+	.letraQueHacemos1 {
+		padding: 10px 5px 0px 5px;
+	}
+	.letraQueHacemos2 {
+		padding: 0px 5px 0px 5px;
+	}
+	.letraPiePagina {
+		h5 {
+			font-size: x-small;
+		}
+		width: 300px;
+	}
+	.logoFooter {
+		img {
+			animation: none;
+			width: 90px;
+			height: 90px;
+		}
+	}
+	.redes {
+		display: flex;
+		align-items: flex-start;
+	}
+	.mapaUbicacion {
+		display: flex;
+		justify-content: center;
+	}
+	.wpp {
+		display: flex;
+		flex-direction: column;
+		padding-left: 130px;
+		img {
+			padding: 40px;
+			width: 140px;
+		}
+	}
+	.container {
+		flex-wrap: wrap;
+	}
+}
+@media (min-width:1800px) {
+	.inicio {
+		display: flex;
+		justify-content: center;
+	}
+	.trabajosRealizados {
+		padding-top: 60px;
+		width: 500px;
+		height: auto;
+		display: flex;
+		justify-content: center;
+	}
+	.queHacemos {
+		width: 600px;
+		padding: 80px 10px 10px 10px;
+		h2 {
+			font-size: 30px;
+			padding: 10px 5px 0px 5px;
+		}
+		p {
+			font-size: 25px;
+			padding: 10px 5px 0px 5px;
+		}
+	}
+	.sliderInicio {
+		width: 500px;
+	}
+	.contacto {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-left: 0px;
+	}
+	.preguntasFrecuentes {
+		font-size: 20px;
+	}
+}
+@media (max-width:872px) {
+	.logoFooter {
+		img {
+			animation: none;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+@media screen and (max-width:900px) {
+	.contenedor-acordeon {
+		width: 90%;
+	}
+	.acordeon {
+		label {
+			padding: 20px;
+			font-size: 15px;
+		}
+	}
+}

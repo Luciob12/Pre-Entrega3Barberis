@@ -1,0 +1,28 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   aside" "footer footer footer footer";
+}
+.gridHeader {
+	grid-area: header;
+}
+.gridMain {
+	grid-area: main;
+}
+.gridAside {
+	grid-area: aside;
+}
+.gridFooter {
+	grid-area: footer;
+}
+.gridSobreNosotros{
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: "nav    nav    nav    nav" 
+						 "header header header header" 
+						 "main   main   main   main" 
+						 "aside  aside  aside  aside"
+						 "footer footer footer footer";
+}

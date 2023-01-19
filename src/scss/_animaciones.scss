@@ -1,0 +1,97 @@
+.loading {
+	width: 100vw;
+	height: 100vh;
+	background-color: $background-color_3;
+	position: fixed;
+	z-index: 400;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	>i {
+		color: $color_4;
+		font-size: 40px;
+		animation-name: rotar;
+		animation-duration: 0.2s;
+		animation-iteration-count: infinite;
+	}
+}
+
+/* INICIO */
+
+@keyframes cambio {
+	0% {
+		margin-left: 0;
+	}
+	20% {
+		margin-left: 0;
+	}
+	25% {
+		margin-left: -100%;
+	}
+	45% {
+		margin-left: -100%;
+	}
+	50% {
+		margin-left: -200%;
+	}
+	70% {
+		margin-left: -200%;
+	}
+	75% {
+		margin-left: -300%;
+	}
+	100% {
+		margin-left: -300%;
+	}
+}
+
+/* PIE PAGINA*/
+
+@keyframes logo {
+	0% {
+		transform: translate(0,0);
+	}
+	25% {
+		transform: translate(200px,0px);
+	}
+}
+
+/* LOADING */
+
+@keyframes rotar {
+	0% {
+		transform: rotateZ(0deg);
+	}
+	100% {
+		transform: rotateZ(90deg);
+	}
+}
+
+/* PAGINA SOBRE NOSOTROS */
+
+@keyframes cambio {
+	0% {
+		margin-left: 0;
+	}
+	20% {
+		margin-left: 0;
+	}
+	25% {
+		margin-left: -100%;
+	}
+	45% {
+		margin-left: -100%;
+	}
+	50% {
+		margin-left: -200%;
+	}
+	70% {
+		margin-left: -200%;
+	}
+	75% {
+		margin-left: -300%;
+	}
+	100% {
+		margin-left: -300%;
+	}
+}
